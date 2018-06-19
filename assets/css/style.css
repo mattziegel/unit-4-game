@@ -4,6 +4,7 @@ body {
 
 .container {
     width: 640px;
+    margin:auto;
     align-content: center;
 }
 
