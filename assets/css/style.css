@@ -1,0 +1,76 @@
+body {
+    width:960px;
+}
+
+.container {
+    width: 640px;
+    align-content: center;
+}
+
+.crystal-image {
+    width:100px;
+    height: 100px;
+}
+
+#crystals {
+    width:100%;
+    padding: 90px;
+    margin: 20px;
+}
+
+header {
+    font-family: 'Fredericka the Great', cursive;
+    color: red;
+    font-size: 50px;
+    text-align: center;
+    position: sticky;
+    padding:10px;
+}
+
+.crystal-header {
+    width:35px;
+    height:35px;
+}
+
+h2 {
+    font-family: 'Fredericka the Great', cursive;
+    line-height: 20px;
+}
+
+.instr {
+    box-sizing:border-box;
+    width:50%;
+    margin:auto;
+    position: relative;
+    text-align: center;
+}
+
+p {
+    width:100%;
+    font-family: 'Fredericka the Great', cursive;
+    font-size:10px;
+    line-height: 13px;
+    text-align:justify;
+}
+
+.values{
+    width:50%;
+    margin:auto;
+    float:left;
+    text-align: center;
+}
+
+.results {
+    width:50%;
+    margin:auto;
+    float:left;
+    text-align:center;
+}
+
+footer {
+    text-align:center;
+    width:100%;
+    margin:0px;
+    position:sticky;
+    bottom:5px;
+}

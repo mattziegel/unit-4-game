@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Fredericka+the+Great" rel="stylesheet">
+    <title>Crystal Collector</title>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <img class="crystal-header" src="assets/images/crystalBlue.jpg">Crystal Collector!
+            <img class="crystal-header" src="assets/images/crystalBlue.jpg">
+        </header>
+
+        <div class="instr">
+            <h2>Instructions:</h2>
+            <p>You will be given a random number at the start of the game. There are 4 crystals below. Click on a crystal to
+                add a specific amount of points to your total score.</p>
+            <p>You win by matching your total score to the random number. If you exceed the random number, you lose. The value
+                of each crystal is hidden until you click on it. Each time you start a game the value of each crystal will
+                change.</p>
+            <br>
+        </div>
+
+
+        <div class="values">
+            <h2>Number to Guess:
+                <span id="number-to-guess"></span>
+            </h2>
+            <h2>Your Total Score: </h2>
+        </div>
+
+        <div class="results">
+            <h2>Wins:
+                <span id="wins"></span>
+            </h2>
+            <h2>Losses:
+                <span id="losses"></span>
+            </h2>
+        </div>
+
+        <div id="crystals">
+            <img class="crystal-image" src="assets/images/crystalBlue.jpg">
+            <img class="crystal-image" src="assets/images/crystalYellow.jpg">
+            <img class="crystal-image" src="assets/images/crystalRed.jpg">
+            <img class="crystal-image" src="assets/images/crystalGreen.jpg">
+        </div>
+
+        <footer class="footer">
+            <h1>Copyright 2018 &copy;</h1>
+        </footer>
+
+    </div>
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="assets/javascript/game.js"></script>
+</body>
+
+</html>
