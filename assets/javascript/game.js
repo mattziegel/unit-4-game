@@ -14,9 +14,13 @@ $("#number-to-guess").text(targetNumber);
 
 //generates random number between 1 and 12 for each individual crystal
 var blue = Math.floor(Math.random() * 11 + 1);
+console.log(blue);
 var yellow = Math.floor(Math.random() * 11 + 1);
+console.log(yellow);
 var red = Math.floor(Math.random() * 11 + 1);
+console.log(red);
 var green = Math.floor(Math.random() * 11 + 1);
+console.log(green);
 
 var wins = 0;
 var losses = 0;
@@ -41,39 +45,39 @@ function gameReset() {
     yourScore = 0;
 }
 
-//conditional statements for winning (matching target number) and losing (exceeding target number)
-if (yourScore === targetNumber) {
-    alert("You Win!");
-    wins++;
-    reset();
-}
-
-else if (yourScore >= targetNumber) {
-    alert("You Lose!");
-    losses++;
-    reset();
-}
-
 //updates yourscore on click of each individual crystal
 $("#blue").on("click", function () {
-    yourScore = youScore + blue;
-    $("#total").text(youScore);
+    (yourScore = blue + yourScore);
+    $("#total").text(yourScore);
 })
 
 $("#yellow").on("click", function () {
-    yourScore = youScore + yellow;
-    $("#total").text(youScore);
+    (yourScore = yellow + yourScore);
+    $("#total").text(yourScore);
 })
 
 $("#red").on("click", function () {
-    yourScore = youScore + red;
-    $("#total").text(youScore);
+    (yourScore = red + yourScore);
+    $("#total").text(yourScore);
 })
 
 $("#green").on("click", function () {
-    yourScore = youScore + green;
-    $("#total").text(youScore);
+    (yourScore = yourScore + green);
+    $("#total").text(yourScore);
 })
+
+//conditional statements for winning (matching target number) and losing (exceeding target number)
+if (yourScore === targetNumber) {
+    console.log("You Win!");
+    wins++;
+    gameReset();
+}
+
+else if (yourScore >= targetNumber) {
+    console.log("You Lose!");
+    losses++;
+    gameReset();
+}
 
 });
 
@@ -88,7 +92,7 @@ $("#green").on("click", function () {
 // var numberOptions = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12];
 
 // for (var i = 0; i < numberOptions.length[Math.round(Math.floor())]; i++) {
-//     var imageCrystal = $("<img>");
+//     var blue = $("<img>");
 //     imageCrystal.attr("data-crystalvalue", numberOptions[i]);
 // }
 
