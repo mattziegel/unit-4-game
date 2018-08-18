@@ -1,4 +1,3 @@
-//document ready shorthand I saw online
 $(function () {
     console.log("Ready to play!");
     console.log("If you can read this, you're a cheater. That's ok, cheating is fun too.");
