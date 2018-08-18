@@ -1,5 +1,5 @@
 body {
-    width:960px;
+    width:100%;
 }
 
 .container {
@@ -40,7 +40,7 @@ h2 {
 
 .instr {
     box-sizing:border-box;
-    width:50%;
+    width:60%;
     margin:auto;
     position: relative;
     text-align: center;
