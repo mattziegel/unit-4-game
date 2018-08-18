@@ -63,7 +63,7 @@ $(function () {
     $("#blue").on("click", function () {
         (yourScore = blue + yourScore);
         console.log("Target Number: " + targetNum);
-        console.log("You're Score: " + yourScore);
+        console.log("Your Score: " + yourScore);
         $("#total").text(yourScore);
 
         if (yourScore === targetNum) {
@@ -82,7 +82,7 @@ $(function () {
     $("#yellow").on("click", function () {
         (yourScore = yellow + yourScore);
         console.log("Target Number: " + targetNum);
-        console.log("You're Score: " + yourScore);
+        console.log("Your Score: " + yourScore);
         $("#total").text(yourScore);
 
         if (yourScore === targetNum) {
@@ -101,7 +101,7 @@ $(function () {
     $("#red").on("click", function () {
         (yourScore = red + yourScore);
         console.log("Target Number: " + targetNum);
-        console.log("You're Score: " + yourScore);
+        console.log("Your Score: " + yourScore);
         $("#total").text(yourScore);
 
         if (yourScore === targetNum) {
@@ -121,7 +121,7 @@ $(function () {
     $("#green").on("click", function () {
         (yourScore = green + yourScore);
         console.log("Target Number: " + targetNum);
-        console.log("You're Score: " + yourScore);
+        console.log("Your Score: " + yourScore);
         $("#total").text(yourScore);
 
         if (yourScore === targetNum) {
